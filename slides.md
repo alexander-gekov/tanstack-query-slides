@@ -56,12 +56,17 @@ layout: bio-card
 
 ---
 
-# What is TanStack Query? ([Overview](https://tanstack.com/query/latest/docs/framework/vue/overview))
+# What is TanStack Query?
 
 - A missing data-fetching library for server state in Vue
 - Handles fetching, caching, background updates, retries, pagination, and more
 - Declarative APIs: `useQuery`, `useMutation`, `useInfiniteQuery`
 - Zero-config defaults, fully customizable
+
+<div class="flex items-center justify-center mt-20">
+  <TanStackLogo class="w-40" />
+</div>
+
 
 ---
 
@@ -170,7 +175,7 @@ app.use(VueQueryPlugin)
 
 ## Installation in Nuxt
 
-In Nuxt we register a new NuxtModule
+In Nuxt we register a new Nuxt plugin.
 
 ```ts{1|5|7-9|11|13-17|19-22}
 // plugins/vue-query.ts
